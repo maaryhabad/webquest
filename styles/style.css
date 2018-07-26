@@ -1,0 +1,18 @@
+/**
+ * Main stylesheet of the project.
+ */
+
+body {
+  background-color: #cadcf7;
+  font-family: 'Roboto', serif;
+}
+
+#main-content {
+  /* padding-top should match header's height */
+  padding-top: 80px;
+}
+
+.assunto {
+  font-weight: bold;
+  font-style: italic;
+}

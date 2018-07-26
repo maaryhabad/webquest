@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Introdução - WebQuest</title>
+
+  <!--
+    Ensure that mobile browsers render the viewport size
+    appropriately.
+
+    https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    Load a custom webfont using Google Fonts
+    to see fonts available, go to https://fonts.google.com
+
+    This link imports the font-family 'Lora' at weights
+    400 (regular) and 700 (bold).
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <!-- Import the project's stylesheets -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/grid.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+</head>
+<body>
+  <header id="main-header">
+      <h1>WebQuest</h1>
+    <nav id="main-nav">
+      <!-- Element used to open and close the side menu -->
+      <button id="menu-trigger" type="button"></button>
+
+      <ul>
+        <li>
+          <a href="index.html" class="active">
+            <!--
+              This item is the currently active one.
+              Your code is responsible for switching the
+              active item's class.
+            -->
+            Introdução
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Processo
+          </a>
+        </li>
+        <li>
+          <a href="webquest.html">
+            Tarefas
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Conclusões
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Avaliação
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Conclusões
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="menu-overlay"></div>
+  </header>
+  <section id="main-content">
+
+    Seja bem vindo
+
+
+  </section>
+
+  <!-- jQuery version 3.1.1 uncompressed version -->
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+  <!-- Load the script that defines the header interactions -->
+  <script src="scripts/header.js"></script>
+</body>
+</html>

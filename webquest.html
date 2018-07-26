@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarefas - WebQuest</title>
+
+  <!--
+    Ensure that mobile browsers render the viewport size
+    appropriately.
+
+    https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    Load a custom webfont using Google Fonts
+    to see fonts available, go to https://fonts.google.com
+
+    This link imports the font-family 'Lora' at weights
+    400 (regular) and 700 (bold).
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <!-- Import the project's stylesheets -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/grid.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+</head>
+<body>
+  <header id="main-header">
+      <h1>WebQuest</h1>
+    <nav id="main-nav">
+      <!-- Element used to open and close the side menu -->
+      <button id="menu-trigger" type="button"></button>
+
+      <ul>
+        <li>
+          <a href="index.html">
+            <!--
+              This item is the currently active one.
+              Your code is responsible for switching the
+              active item's class.
+            -->
+            Introdução
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Processo
+          </a>
+        </li>
+        <li>
+          <a href="webquest.html" class="active">
+            Tarefas
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Conclusões
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Avaliação
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Conclusões
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="menu-overlay"></div>
+  </header>
+  <section id="main-content">
+
+    <!--
+      TÓPICOS
+    -->
+    <section class="grid">
+      <!-- TÓPICO 1 -->
+      <article>
+        <figure>
+          <img src="img/gray/img-1-g.svg" alt="alternative text" class="quadrado">
+            <figcaption>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primeiraModal">
+                Tópico 1
+              </button>
+            </figcaption>
+        </figure>
+      </article>
+      
+      <!-- TÓPICO 2 -->
+      <article>
+        <figure>
+          <img src="img/gray/img-2-g.svg" alt="alternative text" class="quadrado">
+            <figcaption>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#segundaModal">
+                Tópico 2
+              </button>
+            </figcaption>
+        </figure>
+      </article>
+      
+      <!-- TÓPICO 3 -->
+      <article>
+        <figure>
+          <img src="img/gray/img-3-g.svg" alt="alternative text" class="quadrado">
+            <figcaption>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#terceiraModal">
+                Tópico 3
+              </button>
+            </figcaption>
+        </figure>
+      </article>
+      
+      <!-- TÓPICO 4 -->
+      <article>
+        <figure>
+          <img src="img/gray/img-4-g.svg" alt="alternative text" class="quadrado">
+            <figcaption>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quartaModal">
+                Tópico 4
+              </button>
+            </figcaption>
+        </figure>
+      </article>
+      
+      <!-- TÓPICO 5 -->
+      <article>
+        <figure>
+          <img src="img/gray/img-5-g.svg" alt="alternative text" class="quadrado">
+            <figcaption>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quintaModal">
+                Tópico 5
+              </button>
+            </figcaption>
+        </figure>
+      </article>
+      
+      <!-- TÓPICO 6 -->
+      <article>
+        <figure>
+          <img src="img/gray/img-6-g.svg" alt="alternative text" class="quadrado">
+            <figcaption>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sextaModal">
+                Tópico 6
+              </button>
+            </figcaption>
+        </figure>
+      </article>
+      
+      
+      <article>
+        <figure>
+          <img src="img/gray/img-7-g.svg" alt="alternative text" class="quadrado">
+            <figcaption>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#setimaModal">
+                Tópico 7
+              </button>
+            </figcaption>
+        </figure>
+      </article>
+      
+      <article>
+        <figure>
+          <img src="img/gray/img-8-g.svg" alt="alternative text" class="quadrado">
+            <figcaption>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#oitavaModal">
+                Tópico 8
+              </button>
+            </figcaption>
+        </figure>
+      </article>
+
+    </section>
+    
+    <!-- MODAL 1 -->
+    <div class="modal fade" id="primeiraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">O assunto é: <span class="assunto">mass media</span></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Segundo P. Marqués (2000), as TIC são os meios de comunicação social “mass media” e os meios de comunicação interpessoais. Diante dessa afirmação, relacione as colunas abaixo que corroboram com a mesma.<br><br>
+            <textarea class="form-control" rows="5" id="comment" placeholder="Escreva sua resposta aqui" required></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary" onclick="botaoModal(1)" data-dismiss="modal">Salve sua resposta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- MODAL 2 -->
+    <div class="modal fade" id="segundaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">O assunto é: <span class="assunto">competência</span></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"> Corroborando com Cebrián (2005, p.22) quando enfatiza que as competências que os estudantes devem desenvolver estão centralizadas em saber: procurar a informação, selecioná-la, recuperá-la, armazená-la, organizá-la e sobretudo, torna-la significativa para o aprendizado. Na sua opinião, quais ações o docente deve priorizar para que o discente possa sentir-se ainda mais familiarizado com as TIC?<br>
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="botaoModal(2)" data-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- MODAL 3 -->
+    <div class="modal fade" id="terceiraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">O assunto é: <span class="assunto">integração</span></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">O uso das TIC para o aprendizado dos docentes e em especial do discente, requer que a integração e o uso desta, seja de maneira inteligente, inovadora e aliada ao processo de ensino aprendizagem para que este último, sinta-se protagonista de suas ações e sucesso. Reflita sobre os seguintes fatores que são imprescindíveis para que haja essa integração de maneira coerente e contundente ao ensino do aluno.<br><br>
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">O educador pode tornar o aluno mais confiante e ativo na busca pela aprendizagem</label>
+                <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                <label for="exampleFormControlTextarea1">A formação docente deve preparar o professor para a utilização das tecnologias</label>
+                <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1">A instituição necessitará investir capital financeiro para renovar os recursos e materiais tecnológicos</label>
+                <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="botaoModal(2)" data-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- jQuery version 3.1.1 uncompressed version -->
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+  <!-- Load the script that defines the header interactions -->
+  <script src="scripts/header.js"></script>
+</body>
+</html>

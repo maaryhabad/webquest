@@ -1,0 +1,95 @@
+/**
+ * Grid styles.
+ * Contains all styles for both the large and small versions of the grid.
+ */
+
+/**
+ * Styles shared by small and large
+ */
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.grid article {
+  position: relative;
+  
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #3d6db2;
+  color: #a5c4f2;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  
+  width: 200px;
+  height: 200px; /* use value 'auto' in order to fit height to its content */
+  
+  flex-grow: 1; /* use value '0' in order to have fixed width elements */
+  
+  overflow: hidden;
+}
+
+.grid article figure {
+  overflow: hidden;
+}
+
+.grid article figure img {
+  display: block;
+  width: 100%;
+  transition: transform ease 0.5s;
+  transform: scale(1) translateX(0);
+}
+
+.grid article figure figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+  opacity: 0;
+  background-color: rgba(14, 76, 137, 0.5);
+  transition: opacity ease 0.3s;
+}
+
+/**
+ * When hover on figure, subscribe the property
+ * opacity value of figcaption with value "1"
+ */
+.grid article figure:hover figcaption {
+  opacity: 1;
+}
+
+/**
+ * When hover on figure, subscribe the property 
+ * transform (scale and translateX) values of img
+ */
+.grid article figure:hover img {
+  transform: scale(1.3) translateX(-10%);
+}
+
+/**
+ * Styles used only by large devices
+ */
+@media (min-width: 501px) {
+  .grid {
+    margin: 30px;
+  }
+}
+
+/**
+ * Styles used only by small devices
+ */
+@media (max-width: 500px) {
+  .grid {
+    margin: 10px;
+  }
+}
