@@ -31,9 +31,8 @@
 
 h1 {
   display: block;
-  color: white;
+  color: white !important;
   font-size: 30px;
-  font: 'Lora', sans-serif;
 }
 
 #main-nav a {

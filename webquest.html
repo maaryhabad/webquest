@@ -154,7 +154,7 @@
         </figure>
       </article>
       
-      
+      <!-- TÓPICO 7 -->
       <article>
         <figure>
           <img src="img/gray/img-7-g.svg" alt="alternative text" class="quadrado">
@@ -166,6 +166,7 @@
         </figure>
       </article>
       
+      <!-- TÓPICO 8 -->
       <article>
         <figure>
           <img src="img/gray/img-8-g.svg" alt="alternative text" class="quadrado">
@@ -176,6 +177,18 @@
             </figcaption>
         </figure>
       </article>
+
+      <!-- TÓPICO 9 -->
+      <article>
+          <figure>
+            <img src="img/gray/img-1-g.svg" alt="alternative text" class="quadrado">
+              <figcaption>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nonaModal">
+                  Tópico 9
+                </button>
+              </figcaption>
+          </figure>
+        </article>
 
     </section>
     
@@ -219,8 +232,8 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" onclick="botaoModal(2)" data-dismiss="modal">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary" onclick="botaoModal(1)" data-dismiss="modal">Salve sua resposta</button>
           </div>
         </div>
       </div>
@@ -249,13 +262,96 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" onclick="botaoModal(2)" data-dismiss="modal">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary" onclick="botaoModal(1)" data-dismiss="modal">Salve sua resposta</button>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- MODAL 4 -->
+    <div class="modal fade" id="quartaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">O assunto é: <span class="assunto">imagem</span></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">Os meios audiovisuais distinguem-se em imagem fixa e imagem em movimento. Quais recursos audiovisuais podemos usar para cada tipo de imagem?<br><br>
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Imagem fixa</label>
+                  <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                  <label for="exampleFormControlTextarea1">Imagem em movimento</label>
+                  <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="botaoModal(1)" data-dismiss="modal">Salve sua resposta</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- MODAL 5 -->
+    <div class="modal fade" id="quintaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">O assunto é: <span class="assunto">imagem</span></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Para a realização de apresentações coletivas, segundo Barroso e Romero (2007 e 2006 como citado por Martín, s/d, pp 19-20) é preciso considerar alguns princípios. Cite estes princípios de forma descritiva.</label>
+                  <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="5"></textarea><br>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="botaoModal(1)" data-dismiss="modal">Salve sua resposta</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- MODAL 6 -->
+    <div class="modal fade" id="sextaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">O assunto é: <span class="assunto">televisão</span></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">Quais são os aspectos dos seguintes tipos de televisão:<br><br>
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Televisão cultural</label>
+                  <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                  <label for="exampleFormControlTextarea1">Televisão escolar</label>
+                  <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                  <label for="exampleFormControlTextarea1">Televisão educativa</label>
+                  <textarea class="form-control" placeholder="Escreva sua resposta aqui" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="botaoModal(1)" data-dismiss="modal">Salve sua resposta</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
   </section>
 
