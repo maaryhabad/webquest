@@ -9,10 +9,26 @@ body {
 
 #main-content {
   /* padding-top should match header's height */
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .assunto {
   font-weight: bold;
   font-style: italic;
+}
+.paragrafo {
+  padding: 0 120px 0 120px;
+}
+.prepblock {
+  background-color: #dee9fc;
+  width: 100%;
+}
+blockquote {
+  padding: 40px;
+}
+.recuo { 
+  text-indent: 4em; 
+}
+.imprensa {
+  width: 800px;
 }
