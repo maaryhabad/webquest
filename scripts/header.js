@@ -43,7 +43,7 @@ function botaoModal() {
     console.log(quadrados);
     var selected = quadrados[(arguments[0]-1)];
     console.log(selected);
-    selected.setAttribute('src', '../img/blue/img-'+arguments[0]+'.svg')
+    selected.setAttribute('src', './img/blue/img-'+arguments[0]+'.svg');
     
 //     var obj = $( "li" );
 // var arr = $.makeArray( obj );
