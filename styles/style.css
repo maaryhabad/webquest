@@ -32,3 +32,6 @@ blockquote {
 .imprensa {
   width: 800px;
 }
+.reftitulo {
+  font-style: italic;
+}
